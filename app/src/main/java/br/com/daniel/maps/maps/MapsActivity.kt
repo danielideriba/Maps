@@ -50,7 +50,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             override fun onLocationChanged(location: Location?) {
                 val minhaPosicao = LatLng(location?.latitude!!,location?.longitude)
                 addMarcador(minhaPosicao, "localizacao")
-                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(minhaPosicao, 12f))
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(minhaPosicao, 18f))
             }
 
             override fun onStatusChanged(p0: String?, p1: Int, p2: Bundle?) {
